@@ -12,7 +12,7 @@ In this game you have a Player and Enemies (Bugs). The goal of the player is to 
 * [Documentation](#Documentation)
 * [Contributing](#Contributing)
 
-Demo
+##Demo
 ===============================
 
 
@@ -24,13 +24,36 @@ The website is available online for viewing at https://anfelespitia.github.io/CA
 
 
 
-How to play
+##How to play
 ===============================
 Press left, right, up or down arrow keys to move across in the game.
 
 Score points by crossing the streets and going to the the water.
 
 Avoid collision with the bugs. It costs your precious 1 point 💎 and 1 life ❤.
+
+## Usage
+
+In order to play the game properly, consider the following steps:
+
+1. Clone project:
+
+    ```
+    $ [sudo] git clone git@github.com:anfelespitia/CAGC-Uacity.git
+    ```
+
+2. Serve the application:
+
+    ```
+    $ [sudo] python -m SimpleHTTPServer
+    ```
+
+3. Open the game:
+
+    ```
+    $ open "http://localhost:8000"
+    ```
+
 
 ### Interface Design
 
