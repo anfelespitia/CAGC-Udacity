@@ -34,15 +34,8 @@ Clone the repository
 
 Open index.html in a web browser (Google Chrome is recommended)
 
-How To Play
-Press the arrow keys to move the character from the grass to the water, without hitting any of the ladybugs.
-
-Earn 5 points for reaching the water, after which the character will be transported back to the grass again for you to continue the game.
-
-Score resets to 0 if you hit any ladybug. An on-going high score is recorded and displayed.
-
-Collect gems and stars along the way to get more points:
-
-Blue gem: +1
-Green gem: +3
-Star: +10
+How to play
+===============================
+Press left, right, up or down arrow keys to move across in the game
+Score points by crossing the streets and going to the the water.
+Avoid collision with the bugs. It costs your precious 1 point 💎 and 1 life ❤.
