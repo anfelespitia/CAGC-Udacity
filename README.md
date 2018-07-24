@@ -1,38 +1,12 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-Introduction
-This is Project 3 for Udacity's Front-End Web Developer Nanodegree.
 
-Main objectives of this project:
+In this game you have a Player and Enemies (Bugs). The goal of the player is to reach the water, without colliding into any one of the enemies. The player can move left, right, up and down. The enemies move in varying speeds on the paved block portion of the scene. Once a the player collides with an enemy, the game is reset and the player moves back to the start square. Once the player reaches the water the game is won.
 
-Given some game assets and a game loop engine, create the classic arcade game Frogger
-Use object-oriented features of JavaScript to write well-designed classes
-Work with HTML5 canvas to draw texts and load images
-Online Live View
-The website is available online for viewing at http://shikeyou.github.io/ClassicArcadeGameClone/
+The website is available online for viewing at http://anfelespitia.github.io/cagc-Udacity/
 
-Files
-These are the files that I have edited:
 
-js/app.js: The main JavaScript file with JavaScript classes for Enemy, Player etc. The codes are mainly written from scratch.
-
-js/engine.js: The game loop engine provided. I have edited a large chunk of the codes to provide additional features such as score system.
-
-These are the files/folders that are provided for this project by Udacity:
-
-index.html: Simple HTML5 file for loading the JavaScript files
-
-js/resources.js: helper object for loading and caching images
-
-css/style.css: Some basic CSS styles
-
-images: Main images folder
-
-Running The Project
-Clone the repository
-
-Open index.html in a web browser (Google Chrome is recommended)
 
 How to play
 ===============================
