@@ -31,3 +31,25 @@ Press left, right, up or down arrow keys to move across in the game.
 Score points by crossing the streets and going to the the water.
 
 Avoid collision with the bugs. It costs your precious 1 point 💎 and 1 life ❤.
+
+### Interface Design
+
+| Criteria              | Specifications    |
+| --------------------- | ----------------- |
+| Styling               | Application uses CSS to style components for the game. |
+| Usability             | All application components are usable across modern desktop, tablet, and phone browsers. |
+
+### Documentation
+
+| Criteria              | Specifications    |
+| --------------------- | ----------------- |
+| README                | A `README` file is included detailing the game and all dependencies. |
+| Comments              | Comments are present and effectively explain longer code procedure when necessary. |
+| Code Quality          | Code is formatted with consistent, logical, and easy-to-read formatting as described in the [Udacity JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html). |
+
+
+## Contributing
+
+This repository is for a project for the Front-End Web Developer NanoDegree program at Udacity. Therefore, pull requests will not be accepted.
+
+For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
