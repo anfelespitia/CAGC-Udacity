@@ -8,7 +8,7 @@ Demo
 ===============================
 
 
-
+<img src="https://paper.dropbox.com/doc/Udacity-classic-arcade-game--AIYf3Z2OHoTXD~vFrTE6xxEtAg-QBVR9BHaPLr5axGB7fZk9" />
 
 
 The website is available online for viewing at https://anfelespitia.github.io/CAGC-Udacity/
