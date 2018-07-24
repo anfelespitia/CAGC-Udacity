@@ -36,6 +36,8 @@ Open index.html in a web browser (Google Chrome is recommended)
 
 How to play
 ===============================
-Press left, right, up or down arrow keys to move across in the game
+Press left, right, up or down arrow keys to move across in the game.
+
 Score points by crossing the streets and going to the the water.
+
 Avoid collision with the bugs. It costs your precious 1 point 💎 and 1 life ❤.
