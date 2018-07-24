@@ -1,6 +1,48 @@
 frontend-nanodegree-arcade-game
 ===============================
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+Introduction
+This is Project 3 for Udacity's Front-End Web Developer Nanodegree.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Main objectives of this project:
+
+Given some game assets and a game loop engine, create the classic arcade game Frogger
+Use object-oriented features of JavaScript to write well-designed classes
+Work with HTML5 canvas to draw texts and load images
+Online Live View
+The website is available online for viewing at http://shikeyou.github.io/ClassicArcadeGameClone/
+
+Files
+These are the files that I have edited:
+
+js/app.js: The main JavaScript file with JavaScript classes for Enemy, Player etc. The codes are mainly written from scratch.
+
+js/engine.js: The game loop engine provided. I have edited a large chunk of the codes to provide additional features such as score system.
+
+These are the files/folders that are provided for this project by Udacity:
+
+index.html: Simple HTML5 file for loading the JavaScript files
+
+js/resources.js: helper object for loading and caching images
+
+css/style.css: Some basic CSS styles
+
+images: Main images folder
+
+Running The Project
+Clone the repository
+
+Open index.html in a web browser (Google Chrome is recommended)
+
+How To Play
+Press the arrow keys to move the character from the grass to the water, without hitting any of the ladybugs.
+
+Earn 5 points for reaching the water, after which the character will be transported back to the grass again for you to continue the game.
+
+Score resets to 0 if you hit any ladybug. An on-going high score is recorded and displayed.
+
+Collect gems and stars along the way to get more points:
+
+Blue gem: +1
+Green gem: +3
+Star: +10
