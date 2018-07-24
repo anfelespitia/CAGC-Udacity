@@ -8,6 +8,7 @@ In this game you have a Player and Enemies (Bugs). The goal of the player is to 
 
 * [Demo](#Demo)
 * [How to play](#How-to-play)
+* [Usage](#Usage)
 * [Interface Design](#Interface-Design)
 * [Documentation](#Documentation)
 * [Contributing](#Contributing)
