@@ -8,7 +8,7 @@ Demo
 ===============================
 
 
-<img src="https://drive.google.com/file/d/1qWVZJCbIEgrEz4k7mmGSVdCHI-Nmp1H7/view?usp=sharing"/>
+![alt text](https://drive.google.com/file/d/1qWVZJCbIEgrEz4k7mmGSVdCHI-Nmp1H7/view?usp=sharing)
 
 
 The website is available online for viewing at https://anfelespitia.github.io/CAGC-Udacity/
