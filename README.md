@@ -38,7 +38,7 @@ In order to play the game properly, consider the following steps:
 1. Clone project:
 
     ```
-    $ [sudo] git clone git@github.com:anfelespitia/CAGC-Uacity.git
+    $ [sudo] git clone git@github.com:anfelespitia/CAGC-Udacity.git
     ```
 
 2. Serve the application:
