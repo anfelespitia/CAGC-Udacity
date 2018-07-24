@@ -1,4 +1,4 @@
-frontend-nanodegree-arcade-game
+UDACITY CLASSIC ARCADE GAME CLONE
 ===============================
 
 
