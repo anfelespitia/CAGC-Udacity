@@ -16,7 +16,8 @@ Demo
 ===============================
 
 
-![alt text](https://drive.google.com/file/d/1qWVZJCbIEgrEz4k7mmGSVdCHI-Nmp1H7/view?usp=sharing)
+<img width="500" alt="classic arcade game clone" src="https://user-images.githubusercontent.com/39103110/43135185-d391f794-8f44-11e8-9a26-040185bb7ce3.png">
+
 
 
 The website is available online for viewing at https://anfelespitia.github.io/CAGC-Udacity/
