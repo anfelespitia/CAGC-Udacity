@@ -6,11 +6,11 @@ In this game you have a Player and Enemies (Bugs). The goal of the player is to 
 
 ## Table of Contents
 
-* [Demo](#project-overview)
+* [Demo](#Demo)
 * [How to play](#How-to-play)
-* [Project Specifications](#project-specifications)
-* [Acknowledgements](#acknowledgements)
-* [Contributing](#contributing)
+* [Interface Design](#Interface-Design)
+* [Documentation](#Documentation)
+* [Contributing](#Contributing)
 
 Demo
 ===============================
