@@ -26,7 +26,7 @@ The website is available online for viewing at https://anfelespitia.github.io/CA
 
 ### How to play
 
-Press left, right, up or down arrow keys to move across in the game.
+Move the player around the board using the arrow keys ⬅️ ➡️ ⬆️ ⬇️
 
 Score points by crossing the streets and going to the the water.
 
@@ -34,26 +34,9 @@ Avoid collision with the bugs. It costs your precious 1 point 💎 and 1 life �
 
 ### Usage
 
-In order to play the game properly, consider the following steps:
+Download by clicking on the green button on the right (Clone or Download) or Clone the Repository.
 
-1. Clone project:
-
-    ```
-    $ [sudo] git clone git@github.com:anfelespitia/CAGC-Udacity.git
-    ```
-
-2. Serve the application:
-
-    ```
-    $ [sudo] python -m SimpleHTTPServer
-    ```
-
-3. Open the game:
-
-    ```
-    $ open "http://localhost:8000"
-    ```
-
+Open the index.html file in your browser.
 
 ### Interface Design
 
