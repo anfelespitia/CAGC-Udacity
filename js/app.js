@@ -1,12 +1,12 @@
 //Enemies our player must avoid
-var Enemy = function (x,y, speed) {
-    //The following variables are used to determinate the x and y axis and speed of the enemy
+class Enemy {
+    constructor(x, y, speed) {
         this.x = x;
         this.y = y;
         this.speed = speed;
-    //The image of the enemy that is added to the palying field
         this.sprite = 'images/enemy-bug.png';
-    };
+    }
+}
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
