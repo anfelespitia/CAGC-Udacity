@@ -1,15 +1,12 @@
-//
-//Enemy class
-//
-
-class Enemy {
-    constructor(x, y, speed) {
+//Enemies our player must avoid
+var Enemy = function (x,y, speed) {
+    //The following variables are used to determinate the x and y axis and speed of the enemy
         this.x = x;
         this.y = y;
         this.speed = speed;
+    //The image of the enemy that is added to the palying field
         this.sprite = 'images/enemy-bug.png';
-    }
-}
+    };
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
@@ -58,13 +55,13 @@ class Player {
 
 
 // used to reset the user position
-Player.prototype.resetPosition = function () {
+.prototype.resetPosition = function () {
     this.x = 200;
     this.y = 400;
 };
 
 //used for preventing player from getting out of the boundaries.
-Player.prototype.update = function () {
+This.prototype.update = function () {
 
     if (this.y > 380) {
         this.y = 380;
@@ -81,29 +78,29 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        player.increasePoint();
+        this.increasePoint();
     }
 };
 
 //Increase player points
-Player.prototype.increasePoint = function () {
+This.prototype.increasePoint = function () {
     this.point += 3;
 };
 
 // Decrease player points
-Player.prototype.decreasePoint = function () {
+This.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0;
 };
 // Decrease player life
-Player.prototype.decreaseLife = function () {
+This.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
         player.gameOver();
 };
 // Executed when life is === 0
-Player.prototype.gameOver = function () {
+This.prototype.gameOver = function () {
     if (localStorage.getItem('point') === null)
         localStorage.setItem("point", this.point);
     else {
@@ -117,13 +114,13 @@ Player.prototype.gameOver = function () {
 };
 
 // Used to reset game. Executed, without user action, after the game is over
-Player.prototype.restartGame = function () {
+This.prototype.restartGame = function () {
     this.point = 0;
     this.life = 3;
 };
 
 // Draw the player on the screen, required method for game
-Player.prototype.render = function () {
+This.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     ctx.fillStyle = 'white';
     ctx.font = "16px Arial";
@@ -132,7 +129,7 @@ Player.prototype.render = function () {
 };
 
 // handles the user input
-Player.prototype.handleInput = function (keyPress) {
+This.prototype.handleInput = function (keyPress) {
     switch (keyPress) {
         case 'left':
             if (this.x > 0) {
