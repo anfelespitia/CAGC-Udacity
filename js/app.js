@@ -1,6 +1,4 @@
-//***********
 //Enemy class
-//***********
 
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
@@ -83,7 +81,7 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        player.increasePoint()
+        this.increasePoint()
     }
 };
 
@@ -93,13 +91,13 @@ Player.prototype.increasePoint = function () {
 };
 
 // Decrease player points
-Player.prototype.decreasePoint = function () {
+This.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0
 };
 // Decrease player life
-Player.prototype.decreaseLife = function () {
+This.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
         player.gameOver()
