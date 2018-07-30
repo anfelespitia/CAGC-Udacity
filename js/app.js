@@ -1,4 +1,7 @@
-//Enemies our player must avoid
+//***********
+//Enemy class
+//***********
+
 class Enemy {
     constructor(x, y, speed) {
         this.x = x;
@@ -55,13 +58,13 @@ class Player {
 
 
 // used to reset the user position
-.prototype.resetPosition = function () {
+Player.prototype.resetPosition = function () {
     this.x = 200;
     this.y = 400;
 };
 
 //used for preventing player from getting out of the boundaries.
-This.prototype.update = function () {
+Player.prototype.update = function () {
 
     if (this.y > 380) {
         this.y = 380;
@@ -78,30 +81,30 @@ This.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        this.increasePoint();
+        player.increasePoint()
     }
 };
 
 //Increase player points
-This.prototype.increasePoint = function () {
-    this.point += 3;
+Player.prototype.increasePoint = function () {
+    this.point += 3
 };
 
 // Decrease player points
-This.prototype.decreasePoint = function () {
+Player.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
-        this.point = 0;
+        this.point = 0
 };
 // Decrease player life
-This.prototype.decreaseLife = function () {
+Player.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
-        player.gameOver();
+        player.gameOver()
 };
 // Executed when life is === 0
-This.prototype.gameOver = function () {
-    if (localStorage.getItem('point') === null)
+Player.prototype.gameOver = function () {
+    if (localStorage.getItem('point') == null)
         localStorage.setItem("point", this.point);
     else {
         if (localStorage.getItem('point') < this.point)
@@ -110,17 +113,17 @@ This.prototype.gameOver = function () {
     alert('Game Over! \n' +
         'Your Score :' + this.point + '\n' +
         'High Score :' + localStorage.getItem('point'));
-    player.restartGame();
+    player.restartGame()
 };
 
 // Used to reset game. Executed, without user action, after the game is over
-This.prototype.restartGame = function () {
+Player.prototype.restartGame = function () {
     this.point = 0;
     this.life = 3;
 };
 
 // Draw the player on the screen, required method for game
-This.prototype.render = function () {
+Player.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     ctx.fillStyle = 'white';
     ctx.font = "16px Arial";
@@ -129,7 +132,7 @@ This.prototype.render = function () {
 };
 
 // handles the user input
-This.prototype.handleInput = function (keyPress) {
+Player.prototype.handleInput = function (keyPress) {
     switch (keyPress) {
         case 'left':
             if (this.x > 0) {
@@ -155,9 +158,9 @@ This.prototype.handleInput = function (keyPress) {
 };
 
 
-//
+//**********
 // instantiation of player and enemies
-//
+//**********
 
 let allEnemies = [];
 let player = new Player();
