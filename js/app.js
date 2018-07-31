@@ -1,5 +1,6 @@
 ///Enemy class
-var Enemy = function(x, y, speed) {
+class Enemy {
+    constructor(x, y, speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     this.x = 0;
