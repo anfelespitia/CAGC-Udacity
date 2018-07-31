@@ -91,7 +91,7 @@ this.increasePoint = function () {
 };
 
 // Decrease player points
-Player.prototype.decreasePoint = function () {
+this.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0
@@ -103,7 +103,7 @@ Player.prototype.decreaseLife = function () {
         player.gameOver()
 };
 // Executed when life is === 0
-Player.prototype.gameOver = function () {
+this.gameOver = function () {
     if (localStorage.getItem('point') == null)
         localStorage.setItem("point", this.point);
     else {
