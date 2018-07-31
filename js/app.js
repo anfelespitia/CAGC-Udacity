@@ -91,13 +91,13 @@ Player.prototype.increasePoint = function () {
 };
 
 // Decrease player points
-This.prototype.decreasePoint = function () {
+Player.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0
 };
 // Decrease player life
-This.prototype.decreaseLife = function () {
+Player.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
         player.gameOver()
