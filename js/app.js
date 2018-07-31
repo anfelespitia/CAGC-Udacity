@@ -1,14 +1,18 @@
-///Enemy class
+var xRows = [83*1-20, 83*2-20, 83*3-20];  // array defining y-coordinate of stone-rows 1-3 in which Enemy can move
+                                          // row = 83px {28}; -20 to position sprite squarely within row
+                                          // note: image size 101x171; image-height:171 > row-height:83, so top-left corner sits way inside row above
+
 var Enemy = function() {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-    this.x = 0;
-    this.y = y;
-    this.speed = Math.random() * 500 + 80;
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
-      };
+
+    this.sprite = 'images/enemy-bug.png';  // load image
+
+    this.x = Math.random() * -500;  // select random horizontal start position (off-screen); changing this value alters how soon Enemy appears
+    this.y = xRows[Math.floor(Math.random() * xRows.length)];  // select random row (vertical position)
+
+    this.speed = Math.random() * 400 + 100;  // speed varies randomly from min 100 to max <500; changing this value alters how fast Enemy moves
+                                             // if game had difficulty levels speed could increase by a factor, e.g 400*a, for a = [1,2,4]
+
+};
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
