@@ -8,8 +8,8 @@ var Enemy = function(x, y, speed) {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
-      }
-}
+      };
+
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
