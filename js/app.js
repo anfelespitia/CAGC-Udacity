@@ -1,13 +1,14 @@
-//Enemy class
-
-class Enemy {
-    constructor(x, y, speed) {
-        this.x = 0;
-        this.y = y;
-        this.speed = Math.random() * 500 + 80;
-        this.sprite = 'images/enemy-bug.png';
-    }
-}
+///Enemy class
+var Enemy = function(x, y, speed) {
+    // Variables applied to each of our instances go here,
+    // we've provided one for you to get started
+    this.x = 0;
+    this.y = y;
+    this.speed = Math.random() * 500 + 80;
+    // The image/sprite for our enemies, this uses
+    // a helper we've provided to easily load images
+    this.sprite = 'images/enemy-bug.png';
+      };
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
