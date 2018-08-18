@@ -80,7 +80,7 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        player.increasePoint()
+        this.player.increasePoint()
     }
 };
 
