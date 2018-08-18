@@ -31,8 +31,8 @@ Enemy.prototype.collisionCheck = function () {
         player.y < this.y + 70 &&
         40 + player.y > this.y) {
         player.resetPosition();
-        player.decreasePoint();
-        player.decreaseLife();
+        this.decreasePoint();
+        this.decreaseLife();
     }
 };
 
