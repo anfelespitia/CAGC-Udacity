@@ -2,11 +2,12 @@
 //Enemy class//
 
 class Enemy {
-    constructor(x, y, speed) {
-        this.x = x;
+    constructor( y,) {
+        this.x = 0;
         this.y = y;
-        this.speed = speed;
+        this.speed = Math.random() * 500 + 80;
         this.sprite = 'images/enemy-bug.png';
+  
     }
 }
 
