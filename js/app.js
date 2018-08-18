@@ -4,13 +4,14 @@
 //Enemy class
 //***********
 
-var Enemy = function() {
-        this.x = x;
+class Enemy = {
+    constructor(y,) {
+        this.x = 0;
         this.y = y;
         this.speed = Math.random() * 500 + 80;
         this.sprite = 'images/enemy-bug.png';
-    };
-
+    }
+}    
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
