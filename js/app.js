@@ -91,7 +91,7 @@ this.increasePoint = function () {
 };
 
 // Decrease player points
-this.decreasePoint = function () {
+Player.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0
