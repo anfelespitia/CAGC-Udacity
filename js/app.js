@@ -103,7 +103,7 @@ Player.prototype.decreaseLife = function () {
         player.gameOver()
 };
 // Executed when life is === 0
-this.gameOver = function () {
+Player.prototype.gameOver = function () {
     if (localStorage.getItem('point') == null)
         localStorage.setItem("point", this.point);
     else {
