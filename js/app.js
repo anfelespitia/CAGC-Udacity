@@ -1,11 +1,11 @@
-
+"use strict"
 //Enemy class//
 
 class Enemy {
-    constructor(x,y,speed) {
-        this.x = 0;
+    constructor(x, y, speed) {
+        this.x = x;
         this.y = y;
-        this.speed = Math.random() * 500 + 80;
+        this.speed = speed;
         this.sprite = 'images/enemy-bug.png';
     }
 }
@@ -80,7 +80,7 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        this.player.increasePoint()
+        player.increasePoint()
     }
 };
 
@@ -101,7 +101,6 @@ Player.prototype.decreaseLife = function () {
     if (this.life === 0)
         player.gameOver()
 };
-
 // Executed when life is === 0
 Player.prototype.gameOver = function () {
     if (localStorage.getItem('point') == null)
