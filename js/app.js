@@ -1,4 +1,4 @@
-"use strict"
+
 //Enemy class//
 
 class Enemy {
