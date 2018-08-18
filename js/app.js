@@ -4,14 +4,14 @@
 //Enemy class
 //***********
 
-class Enemy = {
-    constructor(x,y,speed) {
-        this.x = 0;
+class Enemy {
+    constructor(x, y, speed) {
+        this.x = x;
         this.y = y;
-        this.speed = Math.random() * 500 + 80;
+        this.speed = speed;
         this.sprite = 'images/enemy-bug.png';
     }
-}    
+}
 
 // Used to update enemy's position
 // parameter dt is a time delta between ticks
@@ -68,7 +68,7 @@ Player.prototype.resetPosition = function () {
 //used for preventing player from getting out of the boundaries.
 Player.prototype.update = function () {
 
-   if (this.y > 380) {
+    if (this.y > 380) {
         this.y = 380;
     }
 
