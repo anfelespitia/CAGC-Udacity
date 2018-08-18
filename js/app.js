@@ -5,7 +5,7 @@
 //***********
 
 class Enemy = {
-    constructor(y,) {
+    constructor(x,y,speed) {
         this.x = 0;
         this.y = y;
         this.speed = Math.random() * 500 + 80;
