@@ -81,7 +81,7 @@ Player.prototype.update = function () {
     if (this.y < 0) {
         this.x = 200;
         this.y = 400;
-        this.increasePoint = function() {
+        this.player.increasePoint() 
     }
 };
 
