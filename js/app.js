@@ -68,16 +68,23 @@ Player.prototype.resetPosition = function () {
 //used for preventing player from getting out of the boundaries.
 Player.prototype.update = function () {
 
-    //set x axis boundaries
-    if (this.x < 0) {
-        this.x = 0;
-    } else if (this.x> 400) {
+   if (this.y > 380) {
+        this.y = 380;
+    }
+
+    if (this.x > 400) {
         this.x = 400;
     }
-     //set x axis boundaries
-        else if (this.y > 400){
-            this.y = 400;
-        }
+
+    if (this.x < 0) {
+        this.x = 0;
+    }
+
+    if (this.y < 0) {
+        this.x = 200;
+        this.y = 400;
+        player.increasePoint()
+    }
 };
 
 //Increase player points
