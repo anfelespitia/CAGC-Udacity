@@ -86,12 +86,12 @@ Player.prototype.update = function () {
 };
 
 //Increase player points
-Player.prototype.increasePoint = function () {
+this.prototype.increasePoint = function () {
     this.point += 3
 };
 
 // Decrease player points
-Player.prototype.decreasePoint = function () {
+this.prototype.decreasePoint = function () {
     this.point -= 1;
     if (this.point < 0)
         this.point = 0
