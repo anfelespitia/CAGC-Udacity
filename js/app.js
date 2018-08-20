@@ -97,7 +97,7 @@ this.prototype.decreasePoint = function () {
         this.point = 0
 };
 // Decrease player life
-Player.prototype.decreaseLife = function () {
+this.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
         player.gameOver()
