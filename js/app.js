@@ -30,9 +30,9 @@ Enemy.prototype.collisionCheck = function () {
         player.x + 50 > this.x &&
         player.y < this.y + 70 &&
         40 + player.y > this.y) {
-        player.resetPosition();
-        player.decreasePoint();
-        player.decreaseLife();
+        this.resetPosition();
+        this.decreasePoint();
+        this.decreaseLife();
     }
 };
 
@@ -100,7 +100,7 @@ Player.prototype.decreasePoint = function () {
 Player.prototype.decreaseLife = function () {
     this.life -= 1;
     if (this.life === 0)
-        player.gameOver()
+        this.gameOver()
 };
 // Executed when life is === 0
 Player.prototype.gameOver = function () {
@@ -113,7 +113,7 @@ Player.prototype.gameOver = function () {
     alert('Game Over! \n' +
         'Your Score :' + this.point + '\n' +
         'High Score :' + localStorage.getItem('point'));
-    player.restartGame()
+    this.restartGame()
 };
 
 // Used to reset game. Executed, without user action, after the game is over
