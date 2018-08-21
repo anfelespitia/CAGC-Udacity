@@ -30,9 +30,9 @@ Enemy.prototype.collisionCheck = function () {
         player.x + 50 > this.x &&
         player.y < this.y + 70 &&
         40 + player.y > this.y) {
-        this.resetPosition();
-        this.decreasePoint();
-        this.decreaseLife();
+        Player.resetPosition();
+        Player.decreasePoint();
+        Player.decreaseLife();
     }
 };
 
